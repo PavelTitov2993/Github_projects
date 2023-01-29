@@ -24,11 +24,14 @@ Every cell of my mesh had the "boundary condition" (BC) feature - number could b
 software and then divided then into lesser parts in script. To do this I've written 2 functions that redefine cell's number depending on its coordinates and BC.
 
 Therefore I had to deal with 3 problems:
+
     1) Mesh format. I needed to write script to transform the data to appropriate form.
+    
     2) Also, some physics aspects should be mentioned. In this task melt is located on the definite elevation, and then, after the structural
     components are melted, it falls to the bottom of the vessel. So, obviously, filling of the reactor vessel with melt goes from bottom to top. To take this into 
     account mesh cells should be numerated - from bottom to top, from axis to the wall. I failed to do that in CAD software, so I decided to include renumeration in
     my script.
+    
     3) "Drawing" of the minor areas within the major ones.
     
 In summary, this script receives the geometrical model in the form of 2 files - one with information about calculational cells (their numbers, numbers of the nodes they
