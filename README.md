@@ -27,10 +27,10 @@ Therefore I had to deal with 3 problems:
 
     1) Mesh format. I needed to write script to transform the data to appropriate form.
     
-    2) Also, some physics aspects should be mentioned. In this task melt is located on the definite elevation, and then, after the structural
-    components are melted, it falls to the bottom of the vessel. So, obviously, filling of the reactor vessel with melt goes from bottom to top. To take this into 
-    account mesh cells should be numerated - from bottom to top, from axis to the wall. I failed to do that in CAD software, so I decided to include renumeration in
-    my script.
+    2) Also, some physics aspects should be mentioned. In this task melt is located on the definite elevation, and then, 
+    after the structural components are melted, it falls to the bottom of the vessel. So, obviously, filling of the reactor 
+    vessel with melt goes from bottom to top. To take this into account mesh cells should be numerated - from bottom to top, 
+    from axis to the wall. I failed to do that in CAD software, so I decided to include renumeration in my script.
     
     3) "Drawing" of the minor areas within the major ones.
     
