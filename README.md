@@ -11,17 +11,17 @@ This is an interactive calculator. We can perform all of the basic calculations 
 Writing this was a good practice of defining functions and using conditional operators.
 
 2. main.py
-This script helps to divide a check between a group of people, for example in restaraunt. There is also a "who is lucky" feature. It allows to randomly select one person
-from the group, so he won't have to pay for (him/her)self and the bill will be split among the rest of them.
+This script helps to divide a check between a group of people, for example in restaraunt. There is also a "who is lucky" feature. It allows to randomly select one person from the group, so he won't have to pay for (him/her)self and the bill will be split among the rest of them.
 
-3. materials.ipynb
+3. stones_analysis.ipynb
+This is a notebook with a short analysis of The Rolling Stones discography, dataset is obtained from Kaggle. When I found it I realised that this dataset is a good chance to test my skills with interesting data, because I'm a big fan of the band. So this notebook is a short demonstration of what I've learnt, including data filtering, data aggregating, hypothesis testing, performing statistical tests and data visualization. I provided comments to my actions in the course of the file.
+
+4. materials.ipynb
 This is a more complicated case. My last place of work was engineering company that designs nuclear power plants. One of my responsibilities at that position was to
-perform calculations of the reactor active zone under different loads and conditions. One particular case was modelling of melt benavior in the active zone during severe
-accident. For such calculations we used highly specific software that is pretty demanding in terms of input data and its format.
+perform calculations of the reactor active zone under different loads and conditions. One particular case was modelling of melt benavior in the active zone during severe accident. For such calculations we used highly specific software that is pretty demanding in terms of input data and its format.
 So first I draw the axisymmetric model of reactor core in CAD software - like ANSYS, Pointwise etc. Next, this model was meshed, but the default format of mesh wasn't
 compatible with final software. Apart from that, I should have divided the model to different zones - areas corresponding to different materials (steel, filler blocks etc.).
-Every cell of my mesh had the "boundary condition" (BC) feature - number could be assigned to it to indicate what material it has. So I assembled major areas in the CAD
-software and then divided then into lesser parts in script. To do this I've written 2 functions that redefine cell's number depending on its coordinates and BC.
+Every cell of my mesh had the "boundary condition" (BC) feature - number could be assigned to it to indicate what material it has. So I assembled major areas in the CAD software and then divided then into lesser parts in script. To do this I've written 2 functions that redefine cell's number depending on its coordinates and BC.
 
 Therefore I had to deal with 3 problems:
 
